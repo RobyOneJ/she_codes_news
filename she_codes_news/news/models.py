@@ -9,5 +9,7 @@ class NewsStory(models.Model):
         on_delete=models.CASCADE
     )
     pub_date = models.DateTimeField()
+    #date_updated = models.DateTimeField(auto_now=True)
     content = models.TextField()
+    image = models.URLField(null=True, blank=True)
     category = models.CharField(max_length=50, choices=[("dogs", "Dogs"), ("cats", "Cats"), ("dadj", "Dad's Jokes"), ("other", "Other")], blank=True)

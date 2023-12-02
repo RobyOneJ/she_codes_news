@@ -5,10 +5,10 @@ from .models import NewsStory
 class StoryForm(ModelForm):
     class Meta:
         model = NewsStory
-        fields = ['title', 'category', 'pub_date', 'content']
+        fields = ['title', 'category', 'pub_date', 'image', 'content']
         widgets = {
             'pub_date': forms.DateInput(
-                format='%m/%d/%Y',
+                format='%m/%d/%Y %H:%M:%S',
                 attrs={
                     'class': 'form-control',
                     'placeholder': 'Select a date',
