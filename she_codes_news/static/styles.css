@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 body {
-    background-color: rgb(240, 239, 239);
+    /*background-color: rgb(140, 72, 143);*/
+    background-image: url("/static/images/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
