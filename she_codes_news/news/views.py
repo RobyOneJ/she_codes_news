@@ -11,11 +11,19 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         '''Return all news stories.'''
-        return NewsStory.objects.all()
+        author_name = self.request.GET.get('author', None)
+        if (author_name != None):
+            return NewsStory.objects.filter(author__username=author_name)
+        else:
+            return NewsStory.objects.all()
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['latest_stories'] = NewsStory.objects.all().order_by('-pub_date')[:4]
+        author_name = self.request.GET.get('author', None)
+        if (author_name == None):
+            context['latest_stories'] = NewsStory.objects.all().order_by('-pub_date')[:4]
+        else:
+            context['filtering'] = True
         return context
 
 class StoryView(generic.DetailView):

@@ -15,7 +15,7 @@ header {
 }
 
 img {
-    filter: grayscale(100%);
+    filter: none;
 }
 
 h1 {
@@ -50,6 +50,10 @@ a {
     margin: 2px;
     text-decoration: none;
     color: #000;
+}
+
+a:hover.funky-link {
+    color: blue;
 }
 
 a, p {

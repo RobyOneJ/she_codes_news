@@ -7,7 +7,15 @@
 
     {% block content %}
     <br>
-    <a href="{% url 'news:newStory' %}">Write New Story</a>
+    {% if request.user.is_authenticated %}
+    <a class="funky-link" href="{% url 'news:newStory' %}">'Add New Story'</a>
+    {% endif %}
+    <form action="" method="get">
+        Search by Author: <input type="text" name="author"/>
+        <input type="submit" value="Search">
+    </form>
+
+    {% if not filtering %}
 
     <h2>Latest News</h2>
 
@@ -20,9 +28,10 @@
             <p>No stories are available.</p>
         {% endif %}
     </div>
+    {% endif %}
 
     <div id="all-stories">
-        {% if latest_stories %}
+        {% if all_stories %}
             {% for story in all_stories %}
                 {% include './storyCard.html' with story=story position=forloop.counter %}
             {% endfor %}

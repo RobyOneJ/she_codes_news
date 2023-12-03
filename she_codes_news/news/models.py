@@ -8,8 +8,8 @@ class NewsStory(models.Model):
         get_user_model(),
         on_delete=models.CASCADE
     )
-    pub_date = models.DateTimeField()
+    pub_date = models.DateField()
     #date_updated = models.DateTimeField(auto_now=True)
     content = models.TextField()
     image = models.URLField(null=True, blank=True)
-    category = models.CharField(max_length=50, choices=[("dogs", "Dogs"), ("cats", "Cats"), ("dadj", "Dad's Jokes"), ("other", "Other")], blank=True)
+    category = models.CharField(max_length=50, choices=[("dogs", "Dogs"), ("cats", "Cats"), ("motorbikes", "Motorbikes"), ("other", "Other")], blank=True)
