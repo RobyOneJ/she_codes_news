@@ -17,5 +17,10 @@
         {% endif %}
             {{ story.content|linebreaks }}
     </div>
+    {% if story.author == request.user %}
+        <a class="button" href="/news/edit-story/{{ story.pk }}">Edit</a> 
+        Delete
+    {% endif %}
+
 </div>
 {% endblock %}

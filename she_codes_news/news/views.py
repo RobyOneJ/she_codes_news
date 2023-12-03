@@ -40,3 +40,10 @@ class AddStoryView(generic.CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+    
+class EditStoryView(generic.UpdateView):
+    model = NewsStory
+    form_class = StoryForm 
+    context_object_name = 'storyform'
+    template_name = 'news/createStory.html'
+    success_url = reverse_lazy('news:index')
