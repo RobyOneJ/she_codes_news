@@ -9,7 +9,7 @@ class StoryForm(ModelForm):
         labels = {
             'title':'Story title', 
             'category':'Choose a category', 
-            'pub_date':'Select a publish date', 
+            'pub_date': 'Creation date',
             'image':'Image URL',
             'content':'Story content'
         }
