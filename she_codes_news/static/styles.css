@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,300;1,400;1,800&display=swap');
+
 
 body {
     /*background-color: rgb(140, 72, 143);*/
+    font-family: 'Poppins', sans-serif;
     background-image: url("/static/images/background2.png");
     background-size: cover;
     background-repeat: no-repeat;
+    padding-right: 14px;
 }
 
 header {
+    font-style: italic;
+    color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,14 +26,11 @@ img {
 }
 
 h1 {
-    font-family: 'Montserrat Subrayada', sans-serif;
     text-decoration: none;
+    color: blueviolet;
     font-size: 4rem;
     margin: 0;
-}
-
-h2 {
-   font-family: 'Montserrat Subrayada', sans-serif; 
+    text-shadow: black 1px 1px 2px;
 }
 
 h3 {
@@ -44,26 +48,86 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-style: oblique;
+    font-weight:  bold;
 }
 
 a {
     margin: 2px;
     text-decoration: none;
     color: #000;
+    font-weight: bold;
 }
 
 a:hover.funky-link {
     color: blue;
+    text-decoration: underline;
 }
 
-a, p {
-    font-family: monospace;
+p { 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    font-style: bold;
+    color:darkorange;
+}
+
+:hover.button{
+    background-color: darkgray;
 }
 
 .button {
-    background-color: lightgray;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    white-space: nowrap;
+    margin: 2px;
+    background-color: lightgrey;
     color: black;
+    text-align: center;
+    cursor: default;
     border-radius: 4px;
     border: 1px solid black;
-    /*align-items: flex-start;*/
+    width: 100px;
+}
+
+input.button {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+label {
+    font-size: 36px;
+    font-style: oblique;
+    padding-top: 62px;   
+    text-shadow: black 1px 1px 2px; 
+    
+}
+
+#id_title, #id_category, #id_image, #id_content {
+    border-radius: 4px;
+    padding: 8px;
+}
+
+form#id_create_story {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 4rem;
+}
+
+form#id_create_story p {
+    display: grid;
+}
+
+#id_form_login {
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+    padding-right: 4rem;
 }

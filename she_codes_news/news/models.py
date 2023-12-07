@@ -9,15 +9,15 @@ class NewsStory(models.Model):
         get_user_model(),
         on_delete=models.CASCADE
     )
-    pub_date = models.DateTimeField()
+    pub_date = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
     content = models.TextField()
     image = models.URLField(null=True, blank=True)
     category = models.CharField(max_length=50, choices=[
-        ("dogs", "Dogs"), 
-        ("cats", "Cats"), 
-        ("motorbikes", "Motorbikes"), 
-        ("other", "Other")
+        ("Dogs", "Dogs"), 
+        ("Cats", "Cats"), 
+        ("Motorbikes", "Motorbikes"), 
+        ("Other", "Other")
         ], blank=True)
 
     #removed the pub_date as visile editable field and made it appear automatically at creation and update story

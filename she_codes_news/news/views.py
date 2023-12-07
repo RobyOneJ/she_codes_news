@@ -22,7 +22,7 @@ class IndexView(generic.ListView):
         context = super().get_context_data(**kwargs)
         author_name = self.request.GET.get('author', None)
         if (author_name == None):
-            context['latest_stories'] = NewsStory.objects.all().order_by('-pub_date')[:4]
+            context['latest_stories'] = NewsStory.objects.all().order_by('-last_update')[:4]
         else:
             context['filtering'] = True
         return context
