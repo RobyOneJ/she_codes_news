@@ -75,12 +75,21 @@
     flex-grow: 1;
 }
 
-#story-content {
+#story-content p {
     text-align: justify;
 }
 
 #story-content img {
     float: right;
     margin: 0 0 10px 10px;
-    width: 50%;
+    width: 25%;
+}
+
+#page {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#story-wrapper {
+    text-align: justify;
 }

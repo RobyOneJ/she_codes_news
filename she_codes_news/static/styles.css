@@ -6,7 +6,7 @@
 body {
     /*background-color: rgb(140, 72, 143);*/
     font-family: 'Poppins', sans-serif;
-    background-image: url("/static/images/background2.png");
+    /*background-image: url("/static/images/background2.png");*/
     background-size: cover;
     background-repeat: no-repeat;
     padding-right: 14px;
@@ -130,4 +130,8 @@ form#id_create_story p {
     display: flex;
     justify-content: end;
     padding-right: 4rem;
+}
+
+.centered {
+    text-align: center;
 }

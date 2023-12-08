@@ -1,0 +1,8 @@
+body {
+    /*background-color: rgb(140, 72, 143);*/
+    font-family: 'Poppins', sans-serif;
+    /*background-image: url("/static/images/background2.png");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 14px;
+}

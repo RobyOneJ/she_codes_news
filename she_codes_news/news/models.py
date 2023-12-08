@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth import get_user_model
 #from django.utils import timezone
+from users.models import CustomUser
 
 
 class NewsStory(models.Model):
@@ -19,6 +20,16 @@ class NewsStory(models.Model):
         ("Motorbikes", "Motorbikes"), 
         ("Other", "Other")
         ], blank=True)
+
+
+
+class Comment(models.Model):
+    content = models.TextField()
+    story = models.ForeignKey(NewsStory, on_delete= models.CASCADE)
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    date = models.DateTimeField(auto_now_add=True)
+
+
 
     #removed the pub_date as visile editable field and made it appear automatically at creation and update story
     #def save(self, *args, **kwargs):
