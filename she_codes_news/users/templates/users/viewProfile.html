@@ -12,7 +12,7 @@
     {% if user.profile_image != None %}
     <img class="prof_image" src="{{ user.profile_image }}" alt="{{ user.username }} profile picture">
     {% endif %}
-    <div>
+    <div class="profile">
         <p><span class="bio-heading">Name:</span> {{ user.username }}</p>
         <p><span class="bio-heading">Email:</span> <a href="mailto:{{user.email}}">{{ user.email }}</a></p>
         <p class="bio-heading">Bio: {{ user.bio }}</p>

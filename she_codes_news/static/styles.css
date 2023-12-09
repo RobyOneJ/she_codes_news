@@ -200,6 +200,28 @@ form#id_create_story p {
     width: 100%;
 }
 
+/* styling the user profile page*/
+.auth-details-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.profile p {
+    text-align: left;
+    padding-block: 1px ;
+}
+
+.prof_image{
+    width: 500px;
+    height: 500px;
+}
+
 /*footer style*/
 .hero-logo {
     color: #FFA300;
