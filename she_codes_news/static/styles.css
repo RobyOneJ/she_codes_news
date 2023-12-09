@@ -4,7 +4,7 @@
 
 
 body {
-    /*background-color: rgb(140, 72, 143);*/
+    background-color: #fbe9fc;
     font-family: 'Poppins', sans-serif;
     /*background-image: url("/static/images/background2.png");*/
     background-size: cover;
@@ -31,6 +31,12 @@ h1 {
     font-size: 4rem;
     margin: 0;
     text-shadow: black 1px 1px 2px;
+}
+
+h2 {
+    font-size:xx-large;
+    font-weight: bold;
+    text-shadow: grey 1px 1px 2px; 
 }
 
 h3 {
@@ -70,7 +76,7 @@ p {
     font-size: 18px;
     text-align: center;
     font-style: bold;
-    color:darkorange;
+    color:#332100;
 }
 
 :hover.button{
@@ -103,7 +109,7 @@ label {
     font-size: 36px;
     font-style: oblique;
     padding-top: 62px;   
-    text-shadow: black 1px 1px 2px; 
+    text-shadow: red  1px 1px 2px; 
     
 }
 
@@ -127,11 +133,119 @@ form#id_create_story p {
 }
 
 .search {
-    display: flex;
-    justify-content: end;
+    display: block;
     padding-right: 4rem;
+}
+
+.right-aligned {
+    text-align: end;
 }
 
 .centered {
     text-align: center;
+}
+
+/* styling the 'add-new-story page*/
+#add-story-style {
+    border: solid blueviolet 5px;
+    border-radius: 6px;
+    box-sizing: 20px;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    background-color:#fde0b4;
+}
+
+/* styling the 'Comments' section*/
+.comment-style {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* styling the 'create-account' page*/
+.account-container {
+    border: solid blueviolet 5px;
+    border-radius: 6px;
+    box-sizing: 20px;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    background-color:#fde0b4;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 4rem;
+}
+
+.account-container label {
+    display: block;
+    text-align: left;
+}
+
+.account-container p {
+    text-align: left;
+}
+
+.account-container input {
+    width: 100%;
+    padding: 8px;
+}
+
+.account-container textarea {
+    width: 100%;
+}
+
+/*footer style*/
+.hero-logo {
+    color: #FFA300;
+}
+
+.logo {
+    padding-right: 6px;
+    padding-left: 6px;
+    width: 40px;
+}
+
+.shecodeslogo {
+    height: 24px;
+    margin-left: 4.5px;
+    margin-right: 4.5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.shecodeslogo:hover {
+    height: 28px;
+    margin: 0;
+}
+
+footer p.small-text a {
+    vertical-align: text-top;
+}
+
+.small-text {
+    font-size: small;
+}
+
+footer a:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+footer a img {
+    margin: 5px;
+}
+
+footer a:hover img.logo {
+    width: 50px;
+    margin: 0;
+}
+
+.footer {
+    padding-top: 100px;
 }

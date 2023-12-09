@@ -29,7 +29,7 @@
         {% endif %}
 
     </div>
-    {% if request.user.is_authenticated and story.author != request.user%}
+    {% if request.user.is_authenticated %}
     <div class="centered">
         <h2>Leave a comment</h2>
 
@@ -47,8 +47,8 @@
         <h2>Comments</h2>
         {% if story.comment_set != None %}
         {% for comment in story.comment_set.all %}
-        <div> <span>{{ comment.author.username }}</span> <span>{{ comment.date }}</span></div>
-        <div>{{ comment.content }}</div>
+        <div class="comment-style"> <span>{{ comment.author.username }}</span> <span>{{ comment.date }}</span></div>
+        <div class="comment-style">{{ comment.content }}</div>
         <br>
         {% endfor %}
         {% endif %}

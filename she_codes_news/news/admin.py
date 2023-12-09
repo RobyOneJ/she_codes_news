@@ -5,3 +5,4 @@ from . import models
 
 admin.site.register(models.NewsStory)
 admin.site.register(models.Comment)
+admin.site.register(models.CustomUser)

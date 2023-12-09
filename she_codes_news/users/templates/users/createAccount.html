@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+{% endblock %}
 
 {% block content %}
-    
-<form method="post">
-    <h2 class="form-h2">Create Account</h2>
-    {% csrf_token %}
-    {{form.as_p}}
-    <a class="button" style="width: 150px;" href="/users/create-account/">Create Account</a>
-</form>
+    <form class="account-container" method="post">
+        <h2 class="form-h2">Create Account</h2>
+        {% csrf_token %}
+        {{form.as_p}}
+        <button class="button" type="submit" style="width: 150px;">Create Account</button>
+    </form>
 
 {% endblock %}

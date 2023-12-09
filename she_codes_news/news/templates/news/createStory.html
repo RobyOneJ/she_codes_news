@@ -2,9 +2,14 @@
 
 {% block content %}
 {{ story }}
-<form action="" method="post" id="id_create_story">
-	{% csrf_token %}
-	{{ form.as_p }}
-	<input class="button" type="submit" value="Submit">
-</form>
+<div id="main">
+	<div id="add-story-style">
+		<form action="" method="post" id="id_create_story">
+			<h2 class="form-h2" style="text-align: center;">Add a Story</h2>
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input class="button" type="submit" value="Submit">
+		</form>
+	</div>
+</div>
 {% endblock %}

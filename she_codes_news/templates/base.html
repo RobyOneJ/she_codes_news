@@ -2,27 +2,39 @@
 <!doctype html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>She Codes News</title>
-        <meta name="description" content="">
-        <meta name="author" content="Roberta">
-        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
-        {% block stylesheets %}{% endblock %}
-    </head>
 
-    <body>
-        <header>
-            <div id="header-text">
-                <a id="header-link" href="{% url 'news:index' %}">
-                    <h1>She <span id="h1">{Codes}</span> News</h1>
-                </a>
-            </div>
-            {% include './nav.html' %}
-        </header>
+<head>
+    <meta charset="utf-8">
+    <title>She Codes News</title>
+    <meta name="description" content="">
+    <meta name="author" content="Roberta">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    {% block stylesheets %}{% endblock %}
+</head>
 
-        <!-- content blocks here -->
-        {% block content %}{% endblock %}
-    </body>
+<body>
+    <header>
+        <div id="header-text">
+            <a id="header-link" href="{% url 'news:index' %}">
+                <h1>She <span class="hero-logo" id="h1">{Codes}</span> News</h1>
+            </a>
+        </div>
+        {% include './nav.html' %}
+    </header>
+
+    <!-- content blocks here -->
+    {% block content %}{% endblock %}
+    <footer class="footer">
+        <p><a href="https://www.linkedin.com/in/roberta-de-cecco-837b6a12/" target="_blank" rel="noopener no referrer"><img
+                class="logo" src="{% static 'images/linkedin.png' %}" alt="LinkedIn icon"></a>
+        <a href="https://github.com/RobyOneJ" target="_blank" rel="noopener no referrer"><img class="logo"
+                src="{% static 'images/github.png' %}" alt="GitHub icon"></a></p>
+        <p class="small-text">© 2023 Roberta De Cecco. All rights reserved.</p>
+        <p class="small-text">Empowered by<a href="http://shecodes.com.au" target="_blank"
+                rel="noopener no referrer"><img class="shecodeslogo" src="{% static 'images/She_Codes.png' %}" alt="SheCodes icon">
+            </a></p>
+    </footer>
+</body>
+
 </html>

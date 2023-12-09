@@ -10,7 +10,7 @@
 {% if request.user.is_authenticated %}
 <a class="funky-link" href="{% url 'news:newStory' %}">'Add New Story'</a>
 {% endif %}
-<form class="search" action="" method="get">
+<form class="search right-aligned" action="" method="get">
     Search by Author: <input type="text" name="author" />
     <input type="submit" value="Search">
 </form>
