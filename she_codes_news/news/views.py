@@ -8,7 +8,7 @@ from .forms import StoryForm, CommentForm
 from django.shortcuts import render, get_object_or_404, redirect
 
 
-
+# Search by Author and order stories from the newest to oldest
 class IndexView(generic.ListView):
     template_name = 'news/index.html'
     context_object_name = "all_stories"
@@ -17,9 +17,9 @@ class IndexView(generic.ListView):
         '''Return all news stories.'''
         author_name = self.request.GET.get('author', None)
         if (author_name != None):
-            return NewsStory.objects.filter(author__username=author_name)
+            return NewsStory.objects.filter(author__username=author_name).order_by('-pub_date')
         else:
-            return NewsStory.objects.all()
+            return NewsStory.objects.all().order_by('-pub_date')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
