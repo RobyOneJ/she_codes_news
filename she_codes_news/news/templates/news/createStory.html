@@ -3,6 +3,7 @@
 {% block content %}
 {{ story }}
 <div id="main">
+	{% if request.user.is_authenticated %}
 	<div id="add-story-style">
 		<form action="" method="post" id="id_create_story">
 			<h2 class="form-h2" style="text-align: center;">Add a Story</h2>
@@ -11,5 +12,9 @@
 			<input class="button" type="submit" value="Submit">
 		</form>
 	</div>
+	{% else %}
+	<div class="error-msg">Sorry, it looks like you are not authorised! Please
+		use the links in the Navigation bar to login or create an account.</div>
+	{% endif %}
 </div>
 {% endblock %}

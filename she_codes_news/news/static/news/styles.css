@@ -93,3 +93,10 @@
 #story-wrapper {
     text-align: justify;
 }
+
+/*Styling the error msg for no-auth users*/
+.error-msg {
+    color: red; 
+    text-align:center; 
+    margin-top: 50px;
+}

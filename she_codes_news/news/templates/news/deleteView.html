@@ -7,13 +7,18 @@
 
 {% block content %}
 <section>
+    {% if request.user.is_authenticated %}
     <h2>Delete news story</h2>
     <form method="post">
         {% csrf_token %}
-     <p>Are you sure you want to delete "{{ story.title }}"?</p>
+        <p>Are you sure you want to delete "{{ story.title }}"?</p>
         {{ form }}
-     <input class="button" type="submit" value="Confirm">
-    <a class="button" href="{% url 'news:story' story.id %}">Cancel</a>
+        <input class="button" type="submit" value="Confirm">
+        <a class="button" href="{% url 'news:story' story.id %}">Cancel</a>
     </form>
+    {% else %}
+    <div class="error-msg">Sorry, it looks like you are not authorised! Please
+        use the links in the Navigation bar to login or create an account.</div>
+    {% endif %}
 </section>
 {% endblock %}
