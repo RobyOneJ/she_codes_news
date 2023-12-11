@@ -25,7 +25,7 @@ The website is NOT deployed so you can either check the screenshots provided or 
 
 
 ## Database Schema
-![ERD]( ./static/images/DB_ERD.png)
+![ERD](static/images/DB_ERD.png)
 
 ## Project Features
 - [x] Order stories by date (from latest to oldest - if a card is updated, card shown by last updated date)
