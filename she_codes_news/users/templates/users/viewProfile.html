@@ -7,7 +7,7 @@
 
 {% block content %}
 <div class="auth-details"></div>
-{% if request.user.is_authenticated %}
+{% if request.user.is_authenticated %} 
 <h2>Hello {{ user.username }}</h2>
 <div class="auth-details-wrapper">
     {% if user.profile_image != None %}
@@ -20,7 +20,7 @@
     </div>
 </div>
 {% else %}
-<div style="color: red; text-align:center; margin-top: 50px;">Sorry, it looks like you are not authorised! Please
+<div class="error-msg">Sorry, it looks like you are not authorised! Please
     use the links in the Navigation bar to login or create an account.</div>
 {% endif %}
 </div>
