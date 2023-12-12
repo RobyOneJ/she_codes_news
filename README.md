@@ -39,7 +39,7 @@ The website is NOT deployed so you can either check:
 ![Styled New Story form](she_codes_news/static/images/NewStoryForm.PNG)
 
 - [x] Story images
-![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+![Story Image](she_codes_news/static/images/StoryImage.PNG)
 
 - [x] Log-in/log-out
 ![Login link on Index page](she_codes_news/static/images/Login1.PNG)
@@ -48,10 +48,10 @@ The website is NOT deployed so you can either check:
 
 - [x] "Account view" page
 ![AccountView after user logs in](she_codes_news/static/images/AccountView_UsersLoggedIn.PNG)
+![User Profile page](she_codes_news/static/images/UserProfile.PNG)
 
 - [x] "Create Account" page
 ![Create Account page](she_codes_news/static/images/Create_Account.PNG)
-![User Profile page](she_codes_news/static/images/UserProfile.PNG)
 
 - [x] View stories by author
 ![Search by Author returned](she_codes_news/static/images/Search_Filtered.PNG)
@@ -91,6 +91,6 @@ Not implemented.
 ![Comments feature](she_codes_news/static/images/Comments.PNG)
 
 - [x] Used the contrast checker to choose colours for the main fonts and background, to facilitate accessibility mainly for the Account Creation form.
-![contrast checker1](she_codes_news/static/images/add-story_contrast_checker.PNG) and 
+![contrast checker1](she_codes_news/static/images/add-story_contrast_checker.PNG) 
 ![contrast checker2](she_codes_news/static/images/create-account_contrast_checker.PNG)
 
