@@ -6,10 +6,10 @@ Starter code for the Plus Django project.
 
 ## About This Project
 This project was about creating a 'She Codes News!' website using Django framework and style it.
-The purpose of the website was for users to read new stories and authors to create them.
+The purpose of the website is for users to read new stories and authors to create them.
 Users need to be verified before being able to perform some actions, either logging in or creating an account else a graceful error message is displayed.
 
-The website is NOT deployed so you can either check the screenshots provided or download the code and run the server locally - see instructions in the 'How to Run This Code' section.
+The website is NOT deployed so you can either check the screenshots provided, watch it: ![video](https://youtu.be/x0lGe3lwW7Q) or download the code and run the server locally - see instructions in the 'How to Run This Code' section.
 
 
 
@@ -17,7 +17,7 @@ The website is NOT deployed so you can either check the screenshots provided or 
 - Clone the repo to your local machine, 
 - Create a virtual environment and activate it, 
 - Install Django,
-- mMigrate the database (you need to be in the same directory of your `manage.py` file): `python manage.py migrate`  
+- Migrate the database (you need to be in the same directory of your `manage.py` file): `python manage.py migrate`  
 - Launch the server: `python manage.py runserver`
 - Copy the URL the above command returns (http://localhost.../) in the terminal and paste it into a web browser
 - Once finished exploring the website, Quit the server in the terminal: `Ctrl+C`
@@ -25,7 +25,8 @@ The website is NOT deployed so you can either check the screenshots provided or 
 
 
 ## Database Schema
-![ERD](static/images/DB_ERD.png)
+![ERD](./static/images/DB_ERD.png)
+
 
 ## Project Features
 - [x] Order stories by date (from latest to oldest - if a card is updated, card shown by last updated date)
