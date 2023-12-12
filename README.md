@@ -90,7 +90,7 @@ Not implemented.
 - [x] Add abililty to leave comments on a story.
 ![Comments feature](she_codes_news/static/images/Comments.PNG)
 
-- [x] Used the contrast checker to choose colours for the main fonts and background, to facilitate accessibility.
+- [x] Used the contrast checker to choose colours for the main fonts and background, to facilitate accessibility mainly for the Account Creation form.
 ![contrast checker1](she_codes_news/static/images/add-story_contrast_checker.PNG) and 
 ![contrast checker2](she_codes_news/static/images/create-account_contrast_checker.PNG)
 
