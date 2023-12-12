@@ -9,7 +9,10 @@ This project was about creating a 'She Codes News!' website using Django framewo
 The purpose of the website is for users to read new stories and authors to create them.
 Users need to be verified before being able to perform some actions, either logging in or creating an account else a graceful error message is displayed.
 
-The website is NOT deployed so you can either check the screenshots provided, watch it: [![video](https://youtu.be/x0lGe3lwW7Q)](https://youtu.be/x0lGe3lwW7Q) or download the code and run the server locally - see instructions in the 'How to Run This Code' section.
+The website is NOT deployed so you can either check:
+- the screenshots provided, 
+- watch the: [![video](https://youtu.be/x0lGe3lwW7Q)](https://youtu.be/x0lGe3lwW7Q) 
+- download the code and run the server locally - see instructions in the 'How to Run This Code' section.
 
 
 
@@ -63,12 +66,12 @@ Already captured in other screenshots above.
 
 
 ## Additional Features:
-- [P] Add categories to the stories and allow the user to search for stories bycategory.
+- [P] Add categories to the stories and allow the user to search for stories by category.
 ![Category List at Story Creation](she_codes_news/static/images/CategoryOptions_CreateStory.png)
 ![Category displayed on Cards](she_codes_news/static/images/Category_onStoryCards.PNG)
  I haven't implemented the search by category but I display the chosen category at story creation, in each story card.
 
-- [x] Add the ability to update and delete stories (consider permissions - whoshould be allowed to update or and/or delete stories).
+- [x] Add the ability to update and delete stories (consider permissions - who should be allowed to update or and/or delete stories).
 ![Edit and Delete Stories](she_codes_news/static/images/Edit_Delete1.PNG)
 ![Confirm or Cancel stories deletion](she_codes_news/static/images/ConfirmDelete_CancelDelete.PNG)
 ![Confirmation of Deletion](she_codes_news/static/images/DeletionConfirmed.PNG)
