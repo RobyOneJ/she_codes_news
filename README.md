@@ -25,7 +25,7 @@ The website is NOT deployed so you can either check the screenshots provided, wa
 
 
 ## Database Schema
-![ERD](./static/images/DB_ERD.png)
+![ERD](she_codes_news/static/images/DB_ERD.png)
 
 
 ## Project Features
